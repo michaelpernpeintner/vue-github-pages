@@ -5,6 +5,7 @@
   <button @click="callApi">
     Call API
   </button>
+  <router-link to="/">Back to home</router-link>
 </template>
 
 <script>
