@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <h1>This is a test page for API calls</h1>
-    <input v-model="message">
+    <label>
+      <input v-model="message" />
+    </label>
     <button @click="callApi">
       Call API
     </button>
