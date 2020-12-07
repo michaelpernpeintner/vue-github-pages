@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1>This is a test page for API calls</h1>
+    <input v-model="message">
     <button @click="callApi">
       Call API
     </button>
@@ -9,7 +10,14 @@
 </template>
 
 <script>
-  function callApi() {
-    alert("API called!")
+  module.exports = {
+    data: function () {
+      message
+    },
+    methods: {
+      callApi: function () {
+        alert("API called with message" + this.data.message + "!");
+      }
+    }
   }
 </script>
